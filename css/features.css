@@ -1,0 +1,45 @@
+.features {
+    padding: 120px 0;
+}
+
+.features-title {
+
+}
+
+.features-list {
+    display: flex;
+    gap: 72px 24px;
+}
+
+.features-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: calc((100% - 3 * 24px) / 4);
+}
+
+.features-icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    background-color: #F4F4FD;
+}
+
+.features-icon {
+
+}
+
+.features-item-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.features-item-desc {
+    line-height: 1.5;
+    color: #434455;
+}
+
