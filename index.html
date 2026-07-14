@@ -19,6 +19,11 @@
 <header id="header" class="header">
     <div class="container header-container">
         <a class="logo header-logo" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
+        <button class="header-button" type="button" aria-label="menu-button">
+            <svg class="header-button-icon" width="24" height="24">
+                <use href="./images/icons.svg#burger-menu"></use>
+            </svg>
+        </button>
         <nav class="header-nav">
             <ul class="header-menu">
                 <li>
@@ -338,7 +343,8 @@
                 <li class="portfolio-item">
                     <div class="portfolio-img-box">
                         <img class="portfolio-item-img" alt="Meditation App" src="./images/portfolio-3.jpg"
-                             srcset="./images/portfolio-3.jpg 1x, ./images/portfolio-3@2x.jpg 2x" width="360" height="300">
+                             srcset="./images/portfolio-3.jpg 1x, ./images/portfolio-3@2x.jpg 2x" width="360"
+                             height="300">
                         <div class="portfolio-overlay">
                             <p class="portfolio-overlay-desc">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
@@ -371,7 +377,8 @@
                 <li class="portfolio-item">
                     <div class="portfolio-img-box">
                         <img class="portfolio-item-img" alt="Screen Illustrations" src="./images/portfolio-5.jpg"
-                             srcset="./images/portfolio-5.jpg 1x, ./images/portfolio-5@2x.jpg 2x" width="360" height="300">
+                             srcset="./images/portfolio-5.jpg 1x, ./images/portfolio-5@2x.jpg 2x" width="360"
+                             height="300">
                         <div class="portfolio-overlay">
                             <p class="portfolio-overlay-desc">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
@@ -462,11 +469,77 @@
         </div>
     </div>
 </footer>
+<div class="mobile-menu-container" id="mobile-menu">
+    <button class="btn-close mobile-close" type="button" aria-label="Close modal">
+        <svg class="btn-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#close"></use>
+        </svg>
+    </button>
+    <nav class="mobile-nav">
+        <ul class="mobile-menu">
+            <li>
+                <a class="mobile-menu-link active" href="./index.html">Studio</a>
+            </li>
+            <li>
+                <a class="mobile-menu-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+                <a class="mobile-menu-link" href="#hero">Contacts</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="mobile-address-container">
+        <address class="mobile-address">
+            <ul class="mobile-contacts">
+                <li class="mobile-contacts-item">
+                    <a class="mobile-contacts-link active" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                </li>
+                <li class="mobile-contacts-item">
+                    <a class="mobile-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+        </address>
+        <ul class="socials-list mobi;esocials-list">
+            <li class="socials-item">
+                <a class="socials-link" href="./images/team-1.jpg" target="_blank" rel="noopener noreferrer"
+                   aria-label="instagram">
+                    <svg class="socials-icon" width="16" height="16">
+                        <use href="./images/icons.svg#instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="socials-item">
+                <a class="socials-link" href="./images/team-1.jpg" target="_blank" rel="noopener noreferrer"
+                   aria-label="twitter">
+                    <svg class="socials-icon" width="16" height="16">
+                        <use href="./images/icons.svg#twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="socials-item">
+                <a class="socials-link" href="./images/team-1.jpg" target="_blank" rel="noopener noreferrer"
+                   aria-label="facebook">
+                    <svg class="socials-icon" width="16" height="16">
+                        <use href="./images/icons.svg#facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="socials-item">
+                <a class="socials-link" href="./images/team-1.jpg" target="_blank" rel="noopener noreferrer"
+                   aria-label="linkedin">
+                    <svg class="socials-icon" width="16" height="16">
+                        <use href="./images/icons.svg#linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
 <div class="modal-overlay" id="modal">
     <div class="modal">
         <form class="modal-form">
-            <button class="modal-close" type="button" aria-label="Close modal">
-                <svg class="modal-close-icon" width="8" height="8">
+            <button class="btn-close modal-close" type="button" aria-label="Close modal">
+                <svg class="btn-close-icon" width="8" height="8">
                     <use href="./images/icons.svg#close"></use>
                 </svg>
             </button>

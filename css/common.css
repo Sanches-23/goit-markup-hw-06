@@ -35,9 +35,6 @@ button {
     font-family: inherit;
     letter-spacing: 0.04em;
     padding: 0;
-    &:focus {
-        /*outline: none;*/
-    }
 }
 
 ul,
@@ -75,9 +72,9 @@ fieldset {
 }
 
 .container {
-    max-width: 1158px;
+    /*max-width: 1080px;*/
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 16px;
 }
 
 .logo {
@@ -100,6 +97,7 @@ fieldset {
 }
 
 .socials-item {
+
 }
 
 .socials-link {
@@ -124,6 +122,26 @@ fieldset {
 
 }
 
+.btn-close {
+    color: #2e2f42;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    border-radius: 24px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-close:hover, .btn-close:focus {
+    background-color: #404bbf;
+    color: #FFFFFF;
+}
+
+
 .sr-only {
     position: absolute;
     width: 1px;
@@ -135,4 +153,17 @@ fieldset {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .container {
+        /*max-width: 768px;*/
+    }
+}
+
+@media (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding: 0 15px;
+    }
 }
