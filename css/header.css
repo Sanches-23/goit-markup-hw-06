@@ -8,19 +8,20 @@
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .header-logo {
-    /*margin-right: 76px;*/
     display: block;
     padding: 16px 0;
+    margin-right: 120px;
 }
 
 .header-button {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: auto;
+
 }
 
 .header-button-icon {
@@ -29,89 +30,69 @@
 
 .header-nav {
     display: none;
-    /*margin-right: 15px;*/
 }
 
 .header-menu {
-    /*display: flex;*/
-    /*gap: 40px;*/
+    display: flex;
+    gap: 40px;
 }
 
 .header-menu-link {
-    /*font-size: 16px;*/
-    /*font-weight: 500;*/
-    /*line-height: 1.5;*/
-    /*display: block;*/
-    /*padding: 24px 0;*/
-    /*transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
-    /*position: relative;*/
+    font-weight: 500;
+    line-height: 1.5;
+    display: block;
+    padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
 }
 
 .header-menu-link:hover,
 .header-menu-link:focus {
-    /*color: #404bbf;*/
+    color: #404bbf;
 }
 
 .header-menu-link.active {
-    /*color: #404bbf*/
+    color: #404bbf
 }
 
 .header-menu-link.active::after {
-    /*content: "";*/
-    /*display: inline-block;*/
-    /*position: absolute;*/
-    /*bottom: 0;*/
-    /*left: 0;*/
-    /*background-color: #404bbf;*/
-    /*height: 4px;*/
-    /*width: 100%;*/
-    /*border-radius: 2px;*/
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #404bbf;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
 }
 
 .header-address {
     display: none;
-    /*margin-left: auto;*/
 }
 
 .header-contacts {
-    /*display: flex;*/
-    /*gap: 40px;*/
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .header-contacts-link {
-    /*color: #434455;*/
-    /*line-height: 1.5;*/
-    /*display: block;*/
-    /*padding: 24px 0;*/
-    /*transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
+    display: block;
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 0.04em;
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts-link:hover,
 .header-contacts-link:focus {
-    /*color: #404bbf;*/
+    color: #404bbf;
 }
 
 @media (min-width: 768px) {
-
-
-}
-
-@media (min-width: 1158px) {
-    .header {
-        /*background-color: #FFFFFF;*/
-        /*border-bottom: 1px solid #E7E9FC;*/
-        /*position: sticky;*/
-        /*top: 0;*/
-    }
-
-    .header-container {
-        /*display: flex;*/
-        /*align-items: center;*/
-    }
-
     .header-logo {
-        margin-right: 76px;
-        /*display: block;*/
         padding: 24px 0;
     }
 
@@ -119,8 +100,31 @@
         display: none;
     }
 
-    .header-button-icon {
+    .header-nav {
+        display: block;
+        margin-right: 15px;
+    }
 
+    .header-address {
+        display: block;
+        margin-left: auto;
+    }
+}
+
+@media (min-width: 1158px) {
+    .header {
+    }
+
+    .header-container {
+    }
+
+    .header-logo {
+        margin-right: 76px;
+        padding: 24px 0;
+    }
+
+    .header-button {
+        display: none;
     }
 
     .header-nav {
@@ -133,58 +137,12 @@
         gap: 40px;
     }
 
-    .header-menu-link {
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.5;
-        display: block;
-        padding: 24px 0;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        position: relative;
-    }
-
-    .header-menu-link:hover,
-    .header-menu-link:focus {
-        color: #404bbf;
-    }
-
-    .header-menu-link.active {
-        color: #404bbf
-    }
-
-    .header-menu-link.active::after {
-        content: "";
-        display: inline-block;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        background-color: #404bbf;
-        height: 4px;
-        width: 100%;
-        border-radius: 2px;
-    }
-
     .header-address {
-        display: block;
         margin-left: auto;
     }
 
     .header-contacts {
-        display: flex;
+        flex-direction: row;
         gap: 40px;
     }
-
-    .header-contacts-link {
-        color: #434455;
-        line-height: 1.5;
-        display: block;
-        padding: 24px 0;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .header-contacts-link:hover,
-    .header-contacts-link:focus {
-        color: #404bbf;
-    }
 }
-
