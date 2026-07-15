@@ -93,6 +93,10 @@
     .portfolio-list {
         gap: 72px 24px;
     }
+
+    .portfolio-item {
+        width: calc((100% - 24px) / 2);
+    }
 }
 
 @media (min-width: 1158px) {
@@ -102,5 +106,9 @@
 
     .portfolio-list {
         gap: 48px 24px;
+    }
+
+    .portfolio-item {
+        width: calc((100% - 2 * 24px) / 3);
     }
 }
