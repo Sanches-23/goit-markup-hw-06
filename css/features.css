@@ -1,5 +1,5 @@
 .features {
-    /*padding: 120px 0;*/
+    padding: 96px 0;
 }
 
 .features-title {
@@ -7,25 +7,19 @@
 }
 
 .features-list {
-    /*display: flex;*/
-    /*gap: 72px 24px;*/
+    display: flex;
+    flex-direction: column;
+    gap: 72px 24px;
 }
 
 .features-item {
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*gap: 8px;*/
-    /*width: calc((100% - 3 * 24px) / 4);*/
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .features-icon-box {
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    /*height: 112px;*/
-    /*border: 1px solid #8E8F99;*/
-    /*border-radius: 4px;*/
-    /*background-color: #F4F4FD;*/
+    display: none;
 }
 
 .features-icon {
@@ -33,20 +27,37 @@
 }
 
 .features-item-subtitle {
-    /*font-weight: 500;*/
-    /*font-size: 20px;*/
-    /*line-height: 1.2;*/
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
 }
 
 .features-item-desc {
-    /*line-height: 1.5;*/
-    /*color: #434455;*/
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
 }
 
 
 @media (min-width: 768px) {
+    .features-list {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
 
+    .features-item {
+        width: calc((100% - 24px) / 2);
+    }
 
+    .features-item-subtitle {
+        text-align: start;
+    }
+
+    .features-item-desc {
+        line-height: 1.5;
+    }
 }
 
 @media (min-width: 1158px) {
@@ -54,19 +65,7 @@
         padding: 120px 0;
     }
 
-    .features-title {
-
-    }
-
-    .features-list {
-        display: flex;
-        gap: 72px 24px;
-    }
-
     .features-item {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
         width: calc((100% - 3 * 24px) / 4);
     }
 
@@ -80,18 +79,9 @@
         background-color: #F4F4FD;
     }
 
-    .features-icon {
-
-    }
-
     .features-item-subtitle {
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
-    }
-
-    .features-item-desc {
-        line-height: 1.5;
-        color: #434455;
     }
 }
