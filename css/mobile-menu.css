@@ -109,11 +109,6 @@ body:has(.mobile-menu-container.is-open){
     gap: 40px;
 }
 
-.socials-icon.mobile-socials-icon {
-    width: 24px;
-    height: 24px;
-}
-
 @media (min-width: 768px) {
     .mobile-menu-container {
         display: none;

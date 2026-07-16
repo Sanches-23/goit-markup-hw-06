@@ -128,6 +128,7 @@
         flex-wrap: wrap;
         text-align: start;
         align-items: start;
+        max-width: 552px;
     }
 
     .footer-info {
@@ -143,7 +144,6 @@
         width: 264px;
         max-width: none;
     }
-
 }
 
 @media (min-width: 1158px) {
@@ -154,6 +154,7 @@
     .footer-container {
         flex-wrap: nowrap;
         gap: 83px;
+        max-width: 1158px;
     }
 
     .footer-info {
